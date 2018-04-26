@@ -1,0 +1,2 @@
+# JavaDiptraceAsciiLib-Documentation
+Documentation for JavaDiptraceAsciiLib
