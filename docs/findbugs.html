@@ -79,9 +79,9 @@
 <br/>
 </p>
 <h2>Metrics</h2>
-<p>7298 lines of code analyzed,
-	in 360 classes, 
-	in 38 packages.</p>
+<p>8217 lines of code analyzed,
+	in 405 classes, 
+	in 41 packages.</p>
 <table width="500" cellpadding="5" cellspacing="2">
 <tr class="tableheader">
 <th align="left">Metric</th>
@@ -91,22 +91,22 @@
 <tr class="tablerow0">
 <td>High Priority Warnings</td>
 <td align="right">8</td>
-<td align="right">1.10</td>
+<td align="right">0.97</td>
 </tr>
 <tr class="tablerow1">
 <td>Medium Priority Warnings</td>
-<td align="right">14</td>
-<td align="right">1.92</td>
+<td align="right">16</td>
+<td align="right">1.95</td>
 </tr>
 <tr class="$totalClass">
 <td>
 <b>Total Warnings</b>
 </td>
 <td align="right">
-<b>22</b>
+<b>24</b>
 </td>
 <td align="right">
-<b>3.01</b>
+<b>2.92</b>
 </td>
 </tr>
 </table>
@@ -148,7 +148,7 @@
 <td>
 <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
 </td>
-<td align="right">13</td>
+<td align="right">14</td>
 </tr>
 <tr class="tablerow1">
 <td>
@@ -172,14 +172,14 @@
 <td>
 <a href="#Warnings_STYLE">Dodgy code Warnings</a>
 </td>
-<td align="right">2</td>
+<td align="right">3</td>
 </tr>
 <tr class="tablerow1">
 <td>
 <b>Total</b>
 </td>
 <td align="right">
-<b>22</b>
+<b>24</b>
 </td>
 </tr>
 </table>
@@ -207,7 +207,7 @@
 <br/>In class junit.textui.TestRunner<br/>In method junit.textui.TestRunner.runFailed(String)<br/>At TestRunner.java:[line 198]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66827');">
+<tr class="tablerow0" onclick="toggleRow('N66941');">
 <td>
 <span class="priority-2">FS</span>
 </td>
@@ -216,161 +216,175 @@
 <tr class="detailrow0">
 <td/>
 <td>
-<p id="N66827" style="display: none;">
+<p id="N66941" style="display: none;">
 <a href="#VA_FORMAT_STRING_USES_NEWLINE">Bug type VA_FORMAT_STRING_USES_NEWLINE (click for details)</a>
 <br/>In class org.junit.runners.model.MultipleFailureException<br/>In method org.junit.runners.model.MultipleFailureException.getMessage()<br/>Called method String.format(String, Object[])<br/>Format string "\n  %s(%s)"<br/>At MultipleFailureException.java:[line 37]</p>
 </td>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N65809');">
+<tr class="tablerow1" onclick="toggleRow('N65870');">
+<td>
+<span class="priority-2">It</span>
+</td>
+<td>org.hamcrest.internal.ArrayIterator.next() can't throw NoSuchElementException</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65870" style="display: none;">
+<a href="#IT_NO_SUCH_ELEMENT">Bug type IT_NO_SUCH_ELEMENT (click for details)</a>
+<br/>In class org.hamcrest.internal.ArrayIterator<br/>In method org.hamcrest.internal.ArrayIterator.next()<br/>At ArrayIterator.java:[line 24]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65923');">
 <td>
 <span class="priority-1">Nm</span>
 </td>
 <td>The class name org.junit.AssumptionViolatedException shadows the simple name of the superclass org.junit.internal.AssumptionViolatedException</td>
 </tr>
-<tr class="detailrow1">
+<tr class="detailrow0">
 <td/>
 <td>
-<p id="N65809" style="display: none;">
+<p id="N65923" style="display: none;">
 <a href="#NM_SAME_SIMPLE_NAME_AS_SUPERCLASS">Bug type NM_SAME_SIMPLE_NAME_AS_SUPERCLASS (click for details)</a>
 <br/>In class org.junit.AssumptionViolatedException<br/>In class org.junit.internal.AssumptionViolatedException<br/>At AssumptionViolatedException.java:[lines 22-45]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66236');">
+<tr class="tablerow1" onclick="toggleRow('N66350');">
 <td>
 <span class="priority-1">Nm</span>
 </td>
 <td>The class name org.junit.internal.runners.model.MultipleFailureException shadows the simple name of the superclass org.junit.runners.model.MultipleFailureException</td>
 </tr>
-<tr class="detailrow0">
+<tr class="detailrow1">
 <td/>
 <td>
-<p id="N66236" style="display: none;">
+<p id="N66350" style="display: none;">
 <a href="#NM_SAME_SIMPLE_NAME_AS_SUPERCLASS">Bug type NM_SAME_SIMPLE_NAME_AS_SUPERCLASS (click for details)</a>
 <br/>In class org.junit.internal.runners.model.MultipleFailureException<br/>In class org.junit.runners.model.MultipleFailureException<br/>At MultipleFailureException.java:[lines 10-11]</p>
 </td>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N66283');">
+<tr class="tablerow0" onclick="toggleRow('N66397');">
 <td>
 <span class="priority-2">Nm</span>
 </td>
 <td>Class org.junit.internal.runners.statements.ExpectException is not derived from an Exception, even though it is named as such</td>
 </tr>
-<tr class="detailrow1">
+<tr class="detailrow0">
 <td/>
 <td>
-<p id="N66283" style="display: none;">
+<p id="N66397" style="display: none;">
 <a href="#NM_CLASS_NOT_EXCEPTION">Bug type NM_CLASS_NOT_EXCEPTION (click for details)</a>
 <br/>In class org.junit.internal.runners.statements.ExpectException<br/>At ExpectException.java:[lines 10-35]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66318');">
+<tr class="tablerow1" onclick="toggleRow('N66432');">
 <td>
 <span class="priority-2">Nm</span>
 </td>
 <td>Class org.junit.rules.ExpectedException is not derived from an Exception, even though it is named as such</td>
 </tr>
-<tr class="detailrow0">
+<tr class="detailrow1">
 <td/>
 <td>
-<p id="N66318" style="display: none;">
+<p id="N66432" style="display: none;">
 <a href="#NM_CLASS_NOT_EXCEPTION">Bug type NM_CLASS_NOT_EXCEPTION (click for details)</a>
 <br/>In class org.junit.rules.ExpectedException<br/>At ExpectedException.java:[lines 106-268]</p>
 </td>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N65943');">
+<tr class="tablerow0" onclick="toggleRow('N66057');">
 <td>
 <span class="priority-2">RV</span>
 </td>
 <td>Exceptional return value of java.io.File.delete() ignored in org.junit.experimental.max.MaxHistory.forFolder(File)</td>
 </tr>
-<tr class="detailrow1">
+<tr class="detailrow0">
 <td/>
 <td>
-<p id="N65943" style="display: none;">
+<p id="N66057" style="display: none;">
 <a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
 <br/>In class org.junit.experimental.max.MaxHistory<br/>In method org.junit.experimental.max.MaxHistory.forFolder(File)<br/>Called method java.io.File.delete()<br/>At MaxHistory.java:[line 39]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66353');">
+<tr class="tablerow1" onclick="toggleRow('N66467');">
 <td>
 <span class="priority-2">RV</span>
 </td>
 <td>Exceptional return value of java.io.File.delete() ignored in org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)</td>
 </tr>
-<tr class="detailrow0">
+<tr class="detailrow1">
 <td/>
 <td>
-<p id="N66353" style="display: none;">
+<p id="N66467" style="display: none;">
 <a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
 <br/>In class org.junit.rules.TemporaryFolder<br/>In method org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)<br/>Called method java.io.File.delete()<br/>At TemporaryFolder.java:[line 135]</p>
 </td>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N66423');">
+<tr class="tablerow0" onclick="toggleRow('N66537');">
 <td>
 <span class="priority-2">RV</span>
 </td>
 <td>Exceptional return value of java.io.File.mkdir() ignored in org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)</td>
 </tr>
-<tr class="detailrow1">
+<tr class="detailrow0">
 <td/>
 <td>
-<p id="N66423" style="display: none;">
+<p id="N66537" style="display: none;">
 <a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
 <br/>In class org.junit.rules.TemporaryFolder<br/>In method org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)<br/>Called method java.io.File.mkdir()<br/>At TemporaryFolder.java:[line 136]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66493');">
+<tr class="tablerow1" onclick="toggleRow('N66607');">
 <td>
 <span class="priority-2">RV</span>
 </td>
 <td>Exceptional return value of java.io.File.delete() ignored in org.junit.rules.TemporaryFolder.recursiveDelete(File)</td>
 </tr>
-<tr class="detailrow0">
+<tr class="detailrow1">
 <td/>
 <td>
-<p id="N66493" style="display: none;">
+<p id="N66607" style="display: none;">
 <a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
 <br/>In class org.junit.rules.TemporaryFolder<br/>In method org.junit.rules.TemporaryFolder.recursiveDelete(File)<br/>Called method java.io.File.delete()<br/>At TemporaryFolder.java:[line 168]</p>
 </td>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N66563');">
+<tr class="tablerow0" onclick="toggleRow('N66677');">
 <td>
 <span class="priority-2">Se</span>
 </td>
 <td>Class org.junit.runner.Description defines non-transient non-serializable instance field fAnnotations</td>
 </tr>
-<tr class="detailrow1">
+<tr class="detailrow0">
 <td/>
 <td>
-<p id="N66563" style="display: none;">
+<p id="N66677" style="display: none;">
 <a href="#SE_BAD_FIELD">Bug type SE_BAD_FIELD (click for details)</a>
 <br/>In class org.junit.runner.Description<br/>Field org.junit.runner.Description.fAnnotations<br/>Actual type annotation.Annotation<br/>In Description.java</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66901');">
+<tr class="tablerow1" onclick="toggleRow('N67015');">
 <td>
 <span class="priority-2">Se</span>
 </td>
 <td>org.junit.runners.model.TestClass$FieldComparator implements Comparator but not Serializable</td>
 </tr>
-<tr class="detailrow0">
+<tr class="detailrow1">
 <td/>
 <td>
-<p id="N66901" style="display: none;">
+<p id="N67015" style="display: none;">
 <a href="#SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Bug type SE_COMPARATOR_SHOULD_BE_SERIALIZABLE (click for details)</a>
 <br/>In class org.junit.runners.model.TestClass$FieldComparator<br/>At TestClass.java:[lines 298-300]</p>
 </td>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N66936');">
+<tr class="tablerow0" onclick="toggleRow('N67050');">
 <td>
 <span class="priority-2">Se</span>
 </td>
 <td>org.junit.runners.model.TestClass$MethodComparator implements Comparator but not Serializable</td>
 </tr>
-<tr class="detailrow1">
+<tr class="detailrow0">
 <td/>
 <td>
-<p id="N66936" style="display: none;">
+<p id="N67050" style="display: none;">
 <a href="#SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Bug type SE_COMPARATOR_SHOULD_BE_SERIALIZABLE (click for details)</a>
 <br/>In class org.junit.runners.model.TestClass$MethodComparator<br/>At TestClass.java:[lines 307-310]</p>
 </td>
@@ -384,7 +398,7 @@
 <th align="left">Code</th>
 <th align="left">Warning</th>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N66621');">
+<tr class="tablerow1" onclick="toggleRow('N66735');">
 <td>
 <span class="priority-2">GC</span>
 </td>
@@ -393,12 +407,12 @@
 <tr class="detailrow1">
 <td/>
 <td>
-<p id="N66621" style="display: none;">
+<p id="N66735" style="display: none;">
 <a href="#GC_UNRELATED_TYPES">Bug type GC_UNRELATED_TYPES (click for details)</a>
 <br/>In class org.junit.runners.BlockJUnit4ClassRunner<br/>In method org.junit.runners.BlockJUnit4ClassRunner.withMethodRules(FrameworkMethod, List, Object, Statement)<br/>Actual type org.junit.rules.MethodRule<br/>Expected org.junit.rules.TestRule<br/>Called method java.util.List.contains(Object)<br/>Invoked on testRules<br/>each passed as argument<br/>Object.equals(Object) used to determine equality<br/>At BlockJUnit4ClassRunner.java:[line 364]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N65856');">
+<tr class="tablerow0" onclick="toggleRow('N65970');">
 <td>
 <span class="priority-1">NP</span>
 </td>
@@ -407,7 +421,7 @@
 <tr class="detailrow0">
 <td/>
 <td>
-<p id="N65856" style="display: none;">
+<p id="N65970" style="display: none;">
 <a href="#NP_NULL_PARAM_DEREF_NONVIRTUAL">Bug type NP_NULL_PARAM_DEREF_NONVIRTUAL (click for details)</a>
 <br/>In class org.junit.experimental.max.MaxCore$1<br/>In method org.junit.experimental.max.MaxCore$1.getRunner()<br/>Called method new org.junit.internal.runners.ErrorReportingRunner(Class, Throwable)<br/>At MaxCore.java:[line 117]<br/>Argument 1 is definitely null but must not be null</p>
 </td>
@@ -421,7 +435,7 @@
 <th align="left">Code</th>
 <th align="left">Warning</th>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N66013');">
+<tr class="tablerow1" onclick="toggleRow('N66127');">
 <td>
 <span class="priority-1">Dm</span>
 </td>
@@ -430,12 +444,12 @@
 <tr class="detailrow1">
 <td/>
 <td>
-<p id="N66013" style="display: none;">
+<p id="N66127" style="display: none;">
 <a href="#DM_DEFAULT_ENCODING">Bug type DM_DEFAULT_ENCODING (click for details)</a>
 <br/>In class org.junit.experimental.results.PrintableResult<br/>In method org.junit.experimental.results.PrintableResult.toString()<br/>Called method java.io.ByteArrayOutputStream.toString()<br/>At PrintableResult.java:[line 61]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66082');">
+<tr class="tablerow0" onclick="toggleRow('N66196');">
 <td>
 <span class="priority-1">Dm</span>
 </td>
@@ -444,7 +458,7 @@
 <tr class="detailrow0">
 <td/>
 <td>
-<p id="N66082" style="display: none;">
+<p id="N66196" style="display: none;">
 <a href="#DM_DEFAULT_ENCODING">Bug type DM_DEFAULT_ENCODING (click for details)</a>
 <br/>In class org.junit.experimental.results.PrintableResult<br/>In method org.junit.experimental.results.PrintableResult.toString()<br/>Called method new java.io.PrintStream(OutputStream)<br/>At PrintableResult.java:[line 60]</p>
 </td>
@@ -472,7 +486,7 @@
 <br/>In class junit.runner.BaseTestRunner<br/>In method junit.runner.BaseTestRunner.getPreferences()<br/>On field junit.runner.BaseTestRunner.fPreferences<br/>At BaseTestRunner.java:[lines 47-48]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N66738');">
+<tr class="tablerow0" onclick="toggleRow('N66852');">
 <td>
 <span class="priority-1">RV</span>
 </td>
@@ -481,7 +495,7 @@
 <tr class="detailrow0">
 <td/>
 <td>
-<p id="N66738" style="display: none;">
+<p id="N66852" style="display: none;">
 <a href="#RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED">Bug type RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED (click for details)</a>
 <br/>In class org.junit.runners.BlockJUnit4ClassRunner<br/>In method org.junit.runners.BlockJUnit4ClassRunner.describeChild(FrameworkMethod)<br/>Called method java.util.concurrent.ConcurrentHashMap.putIfAbsent(Object, Object)<br/>Type org.junit.runner.Description<br/>Value loaded from description<br/>At BlockJUnit4ClassRunner.java:[line 98]</p>
 </td>
@@ -509,7 +523,7 @@
 <th align="left">Code</th>
 <th align="left">Warning</th>
 </tr>
-<tr class="tablerow1" onclick="toggleRow('N66151');">
+<tr class="tablerow1" onclick="toggleRow('N66265');">
 <td>
 <span class="priority-1">IA</span>
 </td>
@@ -518,18 +532,32 @@
 <tr class="detailrow1">
 <td/>
 <td>
-<p id="N66151" style="display: none;">
+<p id="N66265" style="display: none;">
 <a href="#IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD">Bug type IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD (click for details)</a>
 <br/>In class org.junit.experimental.theories.Theories$TheoryAnchor$1<br/>In method org.junit.experimental.theories.Theories$TheoryAnchor$1.createTest()<br/>Inherited method org.junit.runners.ParentRunner.getTestClass()<br/>Did you intend to invoke org.junit.experimental.theories.Theories$TheoryAnchor.getTestClass()<br/>At Theories.java:[line 258]</p>
 </td>
 </tr>
-<tr class="tablerow0" onclick="toggleRow('N65688');">
+<tr class="tablerow0" onclick="toggleRow('N65809');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Load of known null value in org.hamcrest.TypeSafeMatcher.describeMismatch(Object, Description)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65809" style="display: none;">
+<a href="#NP_LOAD_OF_KNOWN_NULL_VALUE">Bug type NP_LOAD_OF_KNOWN_NULL_VALUE (click for details)</a>
+<br/>In class org.hamcrest.TypeSafeMatcher<br/>In method org.hamcrest.TypeSafeMatcher.describeMismatch(Object, Description)<br/>Value loaded from item<br/>At TypeSafeMatcher.java:[line 74]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65688');">
 <td>
 <span class="priority-2">ST</span>
 </td>
 <td>Write to static field junit.runner.BaseTestRunner.fgFilterStack from instance method junit.runner.BaseTestRunner.processArguments(String[])</td>
 </tr>
-<tr class="detailrow0">
+<tr class="detailrow1">
 <td/>
 <td>
 <p id="N65688" style="display: none;">
@@ -621,6 +649,17 @@ complain about a potential ambiguous invocation.
 
     
 <h2>
+<a name="IT_NO_SUCH_ELEMENT">IT_NO_SUCH_ELEMENT: Iterator next() method can't throw NoSuchElementException</a>
+</h2>
+
+  <p> This class implements the <code>java.util.Iterator</code> interface.&nbsp;
+  However, its <code>next()</code> method is not capable of throwing
+  <code>java.util.NoSuchElementException</code>.&nbsp; The <code>next()</code>
+  method should be changed so it throws <code>NoSuchElementException</code>
+  if is called when there are no more elements to return.</p>
+
+    
+<h2>
 <a name="LI_LAZY_INIT_UPDATE_STATIC">LI_LAZY_INIT_UPDATE_STATIC: Incorrect lazy initialization and update of static field</a>
 </h2>
 
@@ -653,6 +692,17 @@ that its superclass is in a different package (e.g., <code>alpha.Foo</code> exte
 This can be exceptionally confusing, create lots of situations in which you have to look at import statements
 to resolve references and creates many
 opportunities to accidentally define methods that do not override methods in their superclasses.
+</p>
+
+    
+<h2>
+<a name="NP_LOAD_OF_KNOWN_NULL_VALUE">NP_LOAD_OF_KNOWN_NULL_VALUE: Load of known null value</a>
+</h2>
+
+  <p> The variable referenced at this point is known to be null due to an earlier
+   check against null. Although this is valid, it might be a mistake (perhaps you
+intended to refer to a different variable, or perhaps the earlier check to see if the
+variable is null should have been a check to see if it was non-null).
 </p>
 
     
