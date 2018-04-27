@@ -79,9 +79,9 @@
 <br/>
 </p>
 <h2>Metrics</h2>
-<p>737 lines of code analyzed,
-	in 74 classes, 
-	in 8 packages.</p>
+<p>7298 lines of code analyzed,
+	in 360 classes, 
+	in 38 packages.</p>
 <table width="500" cellpadding="5" cellspacing="2">
 <tr class="tableheader">
 <th align="left">Metric</th>
@@ -90,23 +90,23 @@
 </tr>
 <tr class="tablerow0">
 <td>High Priority Warnings</td>
-<td align="right"/>
-<td align="right">0.00</td>
+<td align="right">8</td>
+<td align="right">1.10</td>
 </tr>
 <tr class="tablerow1">
 <td>Medium Priority Warnings</td>
-<td align="right"/>
-<td align="right">0.00</td>
+<td align="right">14</td>
+<td align="right">1.92</td>
 </tr>
 <tr class="$totalClass">
 <td>
 <b>Total Warnings</b>
 </td>
 <td align="right">
-<b>0</b>
+<b>22</b>
 </td>
 <td align="right">
-<b>0.00</b>
+<b>3.01</b>
 </td>
 </tr>
 </table>
@@ -120,6 +120,21 @@
 <h2>Contents</h2>
 <ul>
 <li>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</li>
+<li>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</li>
+<li>
+<a href="#Warnings_I18N">Internationalization Warnings</a>
+</li>
+<li>
+<a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</li>
+<li>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</li>
+<li>
 <a href="#Details">Details</a>
 </li>
 </ul>
@@ -131,17 +146,599 @@
 </tr>
 <tr class="tablerow0">
 <td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">13</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_I18N">Internationalization Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</td>
+<td align="right">3</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow1">
+<td>
 <b>Total</b>
 </td>
 <td align="right">
-<b>0</b>
+<b>22</b>
 </td>
 </tr>
 </table>
 <h1>Warnings</h1>
 <p>Click on a warning row to see full context information.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65755');">
+<td>
+<span class="priority-2">Dm</span>
+</td>
+<td>junit.textui.TestRunner.runFailed(String) invokes System.exit(...), which shuts down the entire virtual machine</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65755" style="display: none;">
+<a href="#DM_EXIT">Bug type DM_EXIT (click for details)</a>
+<br/>In class junit.textui.TestRunner<br/>In method junit.textui.TestRunner.runFailed(String)<br/>At TestRunner.java:[line 198]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66827');">
+<td>
+<span class="priority-2">FS</span>
+</td>
+<td>Format string should use %n rather than \n in org.junit.runners.model.MultipleFailureException.getMessage()</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66827" style="display: none;">
+<a href="#VA_FORMAT_STRING_USES_NEWLINE">Bug type VA_FORMAT_STRING_USES_NEWLINE (click for details)</a>
+<br/>In class org.junit.runners.model.MultipleFailureException<br/>In method org.junit.runners.model.MultipleFailureException.getMessage()<br/>Called method String.format(String, Object[])<br/>Format string "\n  %s(%s)"<br/>At MultipleFailureException.java:[line 37]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65809');">
+<td>
+<span class="priority-1">Nm</span>
+</td>
+<td>The class name org.junit.AssumptionViolatedException shadows the simple name of the superclass org.junit.internal.AssumptionViolatedException</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65809" style="display: none;">
+<a href="#NM_SAME_SIMPLE_NAME_AS_SUPERCLASS">Bug type NM_SAME_SIMPLE_NAME_AS_SUPERCLASS (click for details)</a>
+<br/>In class org.junit.AssumptionViolatedException<br/>In class org.junit.internal.AssumptionViolatedException<br/>At AssumptionViolatedException.java:[lines 22-45]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66236');">
+<td>
+<span class="priority-1">Nm</span>
+</td>
+<td>The class name org.junit.internal.runners.model.MultipleFailureException shadows the simple name of the superclass org.junit.runners.model.MultipleFailureException</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66236" style="display: none;">
+<a href="#NM_SAME_SIMPLE_NAME_AS_SUPERCLASS">Bug type NM_SAME_SIMPLE_NAME_AS_SUPERCLASS (click for details)</a>
+<br/>In class org.junit.internal.runners.model.MultipleFailureException<br/>In class org.junit.runners.model.MultipleFailureException<br/>At MultipleFailureException.java:[lines 10-11]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66283');">
+<td>
+<span class="priority-2">Nm</span>
+</td>
+<td>Class org.junit.internal.runners.statements.ExpectException is not derived from an Exception, even though it is named as such</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66283" style="display: none;">
+<a href="#NM_CLASS_NOT_EXCEPTION">Bug type NM_CLASS_NOT_EXCEPTION (click for details)</a>
+<br/>In class org.junit.internal.runners.statements.ExpectException<br/>At ExpectException.java:[lines 10-35]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66318');">
+<td>
+<span class="priority-2">Nm</span>
+</td>
+<td>Class org.junit.rules.ExpectedException is not derived from an Exception, even though it is named as such</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66318" style="display: none;">
+<a href="#NM_CLASS_NOT_EXCEPTION">Bug type NM_CLASS_NOT_EXCEPTION (click for details)</a>
+<br/>In class org.junit.rules.ExpectedException<br/>At ExpectedException.java:[lines 106-268]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65943');">
+<td>
+<span class="priority-2">RV</span>
+</td>
+<td>Exceptional return value of java.io.File.delete() ignored in org.junit.experimental.max.MaxHistory.forFolder(File)</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65943" style="display: none;">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
+<br/>In class org.junit.experimental.max.MaxHistory<br/>In method org.junit.experimental.max.MaxHistory.forFolder(File)<br/>Called method java.io.File.delete()<br/>At MaxHistory.java:[line 39]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66353');">
+<td>
+<span class="priority-2">RV</span>
+</td>
+<td>Exceptional return value of java.io.File.delete() ignored in org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66353" style="display: none;">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
+<br/>In class org.junit.rules.TemporaryFolder<br/>In method org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)<br/>Called method java.io.File.delete()<br/>At TemporaryFolder.java:[line 135]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66423');">
+<td>
+<span class="priority-2">RV</span>
+</td>
+<td>Exceptional return value of java.io.File.mkdir() ignored in org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66423" style="display: none;">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
+<br/>In class org.junit.rules.TemporaryFolder<br/>In method org.junit.rules.TemporaryFolder.createTemporaryFolderIn(File)<br/>Called method java.io.File.mkdir()<br/>At TemporaryFolder.java:[line 136]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66493');">
+<td>
+<span class="priority-2">RV</span>
+</td>
+<td>Exceptional return value of java.io.File.delete() ignored in org.junit.rules.TemporaryFolder.recursiveDelete(File)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66493" style="display: none;">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Bug type RV_RETURN_VALUE_IGNORED_BAD_PRACTICE (click for details)</a>
+<br/>In class org.junit.rules.TemporaryFolder<br/>In method org.junit.rules.TemporaryFolder.recursiveDelete(File)<br/>Called method java.io.File.delete()<br/>At TemporaryFolder.java:[line 168]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66563');">
+<td>
+<span class="priority-2">Se</span>
+</td>
+<td>Class org.junit.runner.Description defines non-transient non-serializable instance field fAnnotations</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66563" style="display: none;">
+<a href="#SE_BAD_FIELD">Bug type SE_BAD_FIELD (click for details)</a>
+<br/>In class org.junit.runner.Description<br/>Field org.junit.runner.Description.fAnnotations<br/>Actual type annotation.Annotation<br/>In Description.java</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66901');">
+<td>
+<span class="priority-2">Se</span>
+</td>
+<td>org.junit.runners.model.TestClass$FieldComparator implements Comparator but not Serializable</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66901" style="display: none;">
+<a href="#SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Bug type SE_COMPARATOR_SHOULD_BE_SERIALIZABLE (click for details)</a>
+<br/>In class org.junit.runners.model.TestClass$FieldComparator<br/>At TestClass.java:[lines 298-300]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66936');">
+<td>
+<span class="priority-2">Se</span>
+</td>
+<td>org.junit.runners.model.TestClass$MethodComparator implements Comparator but not Serializable</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66936" style="display: none;">
+<a href="#SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Bug type SE_COMPARATOR_SHOULD_BE_SERIALIZABLE (click for details)</a>
+<br/>In class org.junit.runners.model.TestClass$MethodComparator<br/>At TestClass.java:[lines 307-310]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66621');">
+<td>
+<span class="priority-2">GC</span>
+</td>
+<td>org.junit.rules.MethodRule is incompatible with expected argument type org.junit.rules.TestRule in org.junit.runners.BlockJUnit4ClassRunner.withMethodRules(FrameworkMethod, List, Object, Statement)</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66621" style="display: none;">
+<a href="#GC_UNRELATED_TYPES">Bug type GC_UNRELATED_TYPES (click for details)</a>
+<br/>In class org.junit.runners.BlockJUnit4ClassRunner<br/>In method org.junit.runners.BlockJUnit4ClassRunner.withMethodRules(FrameworkMethod, List, Object, Statement)<br/>Actual type org.junit.rules.MethodRule<br/>Expected org.junit.rules.TestRule<br/>Called method java.util.List.contains(Object)<br/>Invoked on testRules<br/>each passed as argument<br/>Object.equals(Object) used to determine equality<br/>At BlockJUnit4ClassRunner.java:[line 364]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65856');">
+<td>
+<span class="priority-1">NP</span>
+</td>
+<td>Non-virtual method call in org.junit.experimental.max.MaxCore$1.getRunner() passes null for non-null parameter of new org.junit.internal.runners.ErrorReportingRunner(Class, Throwable)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65856" style="display: none;">
+<a href="#NP_NULL_PARAM_DEREF_NONVIRTUAL">Bug type NP_NULL_PARAM_DEREF_NONVIRTUAL (click for details)</a>
+<br/>In class org.junit.experimental.max.MaxCore$1<br/>In method org.junit.experimental.max.MaxCore$1.getRunner()<br/>Called method new org.junit.internal.runners.ErrorReportingRunner(Class, Throwable)<br/>At MaxCore.java:[line 117]<br/>Argument 1 is definitely null but must not be null</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_I18N">Internationalization Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66013');">
+<td>
+<span class="priority-1">Dm</span>
+</td>
+<td>Found reliance on default encoding in org.junit.experimental.results.PrintableResult.toString(): java.io.ByteArrayOutputStream.toString()</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66013" style="display: none;">
+<a href="#DM_DEFAULT_ENCODING">Bug type DM_DEFAULT_ENCODING (click for details)</a>
+<br/>In class org.junit.experimental.results.PrintableResult<br/>In method org.junit.experimental.results.PrintableResult.toString()<br/>Called method java.io.ByteArrayOutputStream.toString()<br/>At PrintableResult.java:[line 61]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66082');">
+<td>
+<span class="priority-1">Dm</span>
+</td>
+<td>Found reliance on default encoding in org.junit.experimental.results.PrintableResult.toString(): new java.io.PrintStream(OutputStream)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66082" style="display: none;">
+<a href="#DM_DEFAULT_ENCODING">Bug type DM_DEFAULT_ENCODING (click for details)</a>
+<br/>In class org.junit.experimental.results.PrintableResult<br/>In method org.junit.experimental.results.PrintableResult.toString()<br/>Called method new java.io.PrintStream(OutputStream)<br/>At PrintableResult.java:[line 60]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65619');">
+<td>
+<span class="priority-1">LI</span>
+</td>
+<td>Incorrect lazy initialization and update of static field junit.runner.BaseTestRunner.fPreferences in junit.runner.BaseTestRunner.getPreferences()</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65619" style="display: none;">
+<a href="#LI_LAZY_INIT_UPDATE_STATIC">Bug type LI_LAZY_INIT_UPDATE_STATIC (click for details)</a>
+<br/>In class junit.runner.BaseTestRunner<br/>In method junit.runner.BaseTestRunner.getPreferences()<br/>On field junit.runner.BaseTestRunner.fPreferences<br/>At BaseTestRunner.java:[lines 47-48]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66738');">
+<td>
+<span class="priority-1">RV</span>
+</td>
+<td>Return value of putIfAbsent is ignored, but description is reused in org.junit.runners.BlockJUnit4ClassRunner.describeChild(FrameworkMethod)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66738" style="display: none;">
+<a href="#RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED">Bug type RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED (click for details)</a>
+<br/>In class org.junit.runners.BlockJUnit4ClassRunner<br/>In method org.junit.runners.BlockJUnit4ClassRunner.describeChild(FrameworkMethod)<br/>Called method java.util.concurrent.ConcurrentHashMap.putIfAbsent(Object, Object)<br/>Type org.junit.runner.Description<br/>Value loaded from description<br/>At BlockJUnit4ClassRunner.java:[line 98]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65552');">
+<td>
+<span class="priority-2">VO</span>
+</td>
+<td>Increment of volatile field junit.extensions.ActiveTestSuite.fActiveTestDeathCount in junit.extensions.ActiveTestSuite.runFinished()</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65552" style="display: none;">
+<a href="#VO_VOLATILE_INCREMENT">Bug type VO_VOLATILE_INCREMENT (click for details)</a>
+<br/>In class junit.extensions.ActiveTestSuite<br/>In method junit.extensions.ActiveTestSuite.runFinished()<br/>Field junit.extensions.ActiveTestSuite.fActiveTestDeathCount<br/>At ActiveTestSuite.java:[line 67]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66151');">
+<td>
+<span class="priority-1">IA</span>
+</td>
+<td>Potentially ambiguous invocation of either an outer or inherited method org.junit.runners.ParentRunner.getTestClass() in org.junit.experimental.theories.Theories$TheoryAnchor$1.createTest()</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66151" style="display: none;">
+<a href="#IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD">Bug type IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD (click for details)</a>
+<br/>In class org.junit.experimental.theories.Theories$TheoryAnchor$1<br/>In method org.junit.experimental.theories.Theories$TheoryAnchor$1.createTest()<br/>Inherited method org.junit.runners.ParentRunner.getTestClass()<br/>Did you intend to invoke org.junit.experimental.theories.Theories$TheoryAnchor.getTestClass()<br/>At Theories.java:[line 258]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65688');">
+<td>
+<span class="priority-2">ST</span>
+</td>
+<td>Write to static field junit.runner.BaseTestRunner.fgFilterStack from instance method junit.runner.BaseTestRunner.processArguments(String[])</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65688" style="display: none;">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Bug type ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD (click for details)</a>
+<br/>In class junit.runner.BaseTestRunner<br/>In method junit.runner.BaseTestRunner.processArguments(String[])<br/>Field junit.runner.BaseTestRunner.fgFilterStack<br/>At BaseTestRunner.java:[line 159]</p>
+</td>
+</tr>
+</table>
 <h1>
 <a name="Details">Details</a>
 </h1>
-</body>
+<h2>
+<a name="DM_EXIT">DM_EXIT: Method invokes System.exit(...)</a>
+</h2>
+
+  <p> Invoking System.exit shuts down the entire Java virtual machine. This
+   should only been done when it is appropriate. Such calls make it
+   hard or impossible for your code to be invoked by other code.
+   Consider throwing a RuntimeException instead.</p>
+
+    
+<h2>
+<a name="DM_DEFAULT_ENCODING">DM_DEFAULT_ENCODING: Reliance on default encoding</a>
+</h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+<h2>
+<a name="VA_FORMAT_STRING_USES_NEWLINE">VA_FORMAT_STRING_USES_NEWLINE: Format string should use %n rather than \n</a>
+</h2>
+
+<p>
+This format string include a newline character (\n). In format strings, it is generally
+ preferable better to use %n, which will produce the platform-specific line separator.
+</p>
+
+     
+<h2>
+<a name="GC_UNRELATED_TYPES">GC_UNRELATED_TYPES: No relationship between generic parameter and method argument</a>
+</h2>
+     
+     <p> This call to a generic collection method contains an argument
+     with an incompatible class from that of the collection's parameter
+    (i.e., the type of the argument is neither a supertype nor a subtype
+        of the corresponding generic type argument).
+     Therefore, it is unlikely that the collection contains any objects
+    that are equal to the method argument used here.
+    Most likely, the wrong value is being passed to the method.</p>
+    <p>In general, instances of two unrelated classes are not equal.
+    For example, if the <code>Foo</code> and <code>Bar</code> classes
+    are not related by subtyping, then an instance of <code>Foo</code>
+        should not be equal to an instance of <code>Bar</code>.
+    Among other issues, doing so will likely result in an equals method
+    that is not symmetrical. For example, if you define the <code>Foo</code> class
+    so that a <code>Foo</code> can be equal to a <code>String</code>,
+    your equals method isn't symmetrical since a <code>String</code> can only be equal
+    to a <code>String</code>.
+    </p>
+    <p>In rare cases, people do define nonsymmetrical equals methods and still manage to make
+    their code work. Although none of the APIs document or guarantee it, it is typically
+    the case that if you check if a <code>Collection&lt;String&gt;</code> contains
+    a <code>Foo</code>, the equals method of argument (e.g., the equals method of the
+    <code>Foo</code> class) used to perform the equality checks.
+    </p>
+     
+    
+<h2>
+<a name="IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD">IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD: Potentially ambiguous invocation of either an inherited or outer method</a>
+</h2>
+
+  <p>
+An inner class is invoking a method that could be resolved to either a inherited method or a method defined in an outer class.
+For example, you invoke <code>foo(17)</code>, which is defined in both a superclass and in an outer method.
+By the Java semantics,
+it will be resolved to invoke the inherited method, but this may not be want
+you intend.
+</p>
+<p>If you really intend to invoke the inherited method,
+invoke it by invoking the method on super (e.g., invoke super.foo(17)), and
+thus it will be clear to other readers of your code and to FindBugs
+that you want to invoke the inherited method, not the method in the outer class.
+</p>
+<p>If you call <code>this.foo(17)</code>, then the inherited method will be invoked. However, since FindBugs only looks at
+classfiles, it
+can't tell the difference between an invocation of <code>this.foo(17)</code> and <code>foo(17)</code>, it will still
+complain about a potential ambiguous invocation.
+</p>
+
+    
+<h2>
+<a name="LI_LAZY_INIT_UPDATE_STATIC">LI_LAZY_INIT_UPDATE_STATIC: Incorrect lazy initialization and update of static field</a>
+</h2>
+
+<p> This method contains an unsynchronized lazy initialization of a static field.
+After the field is set, the object stored into that location is further updated or accessed.
+The setting of the field is visible to other threads as soon as it is set. If the
+futher accesses in the method that set the field serve to initialize the object, then
+you have a <em>very serious</em> multithreading bug, unless something else prevents
+any other thread from accessing the stored object until it is fully initialized.
+</p>
+<p>Even if you feel confident that the method is never called by multiple
+threads, it might be better to not set the static field until the value
+you are setting it to is fully populated/initialized.
+
+    
+<h2>
+<a name="NM_CLASS_NOT_EXCEPTION">NM_CLASS_NOT_EXCEPTION: Class is not derived from an Exception, even though it is named as such</a>
+</h2>
+
+<p> This class is not derived from another exception, but ends with 'Exception'. This will
+be confusing to users of this class.</p>
+
+    
+<h2>
+<a name="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS">NM_SAME_SIMPLE_NAME_AS_SUPERCLASS: Class names shouldn't shadow simple name of superclass</a>
+</h2>
+
+  <p> This class has a simple name that is identical to that of its superclass, except
+that its superclass is in a different package (e.g., <code>alpha.Foo</code> extends <code>beta.Foo</code>).
+This can be exceptionally confusing, create lots of situations in which you have to look at import statements
+to resolve references and creates many
+opportunities to accidentally define methods that do not override methods in their superclasses.
+</p>
+
+    
+<h2>
+<a name="NP_NULL_PARAM_DEREF_NONVIRTUAL">NP_NULL_PARAM_DEREF_NONVIRTUAL: Non-virtual method call passes null for non-null parameter</a>
+</h2>
+      
+      <p>
+      A possibly-null value is passed to a non-null method parameter.
+    Either the parameter is annotated as a parameter that should
+    always be non-null, or analysis has shown that it will always be
+    dereferenced.
+      </p>
+      
+   
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">RV_RETURN_VALUE_IGNORED_BAD_PRACTICE: Method ignores exceptional return value</a>
+</h2>
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    
+<h2>
+<a name="RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED">RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED: Return value of putIfAbsent ignored, value passed to putIfAbsent reused</a>
+</h2>
+          
+        The <code>putIfAbsent</code> method is typically used to ensure that a
+        single value is associated with a given key (the first value for which put
+        if absent succeeds).
+        If you ignore the return value and retain a reference to the value passed in,
+        you run the risk of retaining a value that is not the one that is associated with the key in the map.
+        If it matters which one you use and you use the one that isn't stored in the map,
+        your program will behave incorrectly.
+          
+      
+<h2>
+<a name="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">SE_COMPARATOR_SHOULD_BE_SERIALIZABLE: Comparator doesn't implement Serializable</a>
+</h2>
+
+  <p> This class implements the <code>Comparator</code> interface. You
+should consider whether or not it should also implement the <code>Serializable</code>
+interface. If a comparator is used to construct an ordered collection
+such as a <code>TreeMap</code>, then the <code>TreeMap</code>
+will be serializable only if the comparator is also serializable.
+As most comparators have little or no state, making them serializable
+is generally easy and good defensive programming.
+</p>
+
+    
+<h2>
+<a name="SE_BAD_FIELD">SE_BAD_FIELD: Non-transient non-serializable instance field in serializable class</a>
+</h2>
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    
+<h2>
+<a name="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD: Write to static field from instance method</a>
+</h2>
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    
+<h2>
+<a name="VO_VOLATILE_INCREMENT">VO_VOLATILE_INCREMENT: An increment to a volatile field isn't atomic</a>
+</h2>
+
+<p>This code increments a volatile field. Increments of volatile fields aren't
+atomic. If more than one thread is incrementing the field at the same time,
+increments could be lost.
+</p>
+
+    </body>
 </html>
