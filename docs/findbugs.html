@@ -79,7 +79,7 @@
 <br/>
 </p>
 <h2>Metrics</h2>
-<p>8478 lines of code analyzed,
+<p>8482 lines of code analyzed,
 	in 415 classes, 
 	in 44 packages.</p>
 <table width="500" cellpadding="5" cellspacing="2">
@@ -95,18 +95,18 @@
 </tr>
 <tr class="tablerow1">
 <td>Medium Priority Warnings</td>
-<td align="right">5</td>
-<td align="right">0.59</td>
+<td align="right"/>
+<td align="right">0.00</td>
 </tr>
 <tr class="$totalClass">
 <td>
 <b>Total Warnings</b>
 </td>
 <td align="right">
-<b>5</b>
+<b>0</b>
 </td>
 <td align="right">
-<b>0.59</b>
+<b>0.00</b>
 </td>
 </tr>
 </table>
@@ -120,15 +120,6 @@
 <h2>Contents</h2>
 <ul>
 <li>
-<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
-</li>
-<li>
-<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
-</li>
-<li>
-<a href="#Warnings_STYLE">Dodgy code Warnings</a>
-</li>
-<li>
 <a href="#Details">Details</a>
 </li>
 </ul>
@@ -140,188 +131,17 @@
 </tr>
 <tr class="tablerow0">
 <td>
-<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
-</td>
-<td align="right">2</td>
-</tr>
-<tr class="tablerow1">
-<td>
-<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
-</td>
-<td align="right">2</td>
-</tr>
-<tr class="tablerow0">
-<td>
-<a href="#Warnings_STYLE">Dodgy code Warnings</a>
-</td>
-<td align="right">1</td>
-</tr>
-<tr class="tablerow1">
-<td>
 <b>Total</b>
 </td>
 <td align="right">
-<b>5</b>
+<b>0</b>
 </td>
 </tr>
 </table>
 <h1>Warnings</h1>
 <p>Click on a warning row to see full context information.</p>
-<h2>
-<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
-</h2>
-<table class="warningtable" width="100%" cellspacing="0">
-<tr class="tableheader">
-<th align="left">Code</th>
-<th align="left">Warning</th>
-</tr>
-<tr class="tablerow1" onclick="toggleRow('N65759');">
-<td>
-<span class="priority-2">FS</span>
-</td>
-<td>Format string should use %n rather than \n in javadiptraceasciilib.diptrace.tree.DiptraceItem.parseSubItems(DiptraceTokenizer)</td>
-</tr>
-<tr class="detailrow1">
-<td/>
-<td>
-<p id="N65759" style="display: none;">
-<a href="#VA_FORMAT_STRING_USES_NEWLINE">Bug type VA_FORMAT_STRING_USES_NEWLINE (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.tree.DiptraceItem<br/>In method javadiptraceasciilib.diptrace.tree.DiptraceItem.parseSubItems(DiptraceTokenizer)<br/>Called method String.format(String, Object[])<br/>Format string "Token is not an identifier: Type: %s, %s\n"<br/>At DiptraceItem.java:[line 76]</p>
-</td>
-</tr>
-<tr class="tablerow0" onclick="toggleRow('N65836');">
-<td>
-<span class="priority-2">FS</span>
-</td>
-<td>Format string should use %n rather than \n in javadiptraceasciilib.diptrace.tree.DiptraceItem.printTree(String)</td>
-</tr>
-<tr class="detailrow0">
-<td/>
-<td>
-<p id="N65836" style="display: none;">
-<a href="#VA_FORMAT_STRING_USES_NEWLINE">Bug type VA_FORMAT_STRING_USES_NEWLINE (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.tree.DiptraceItem<br/>In method javadiptraceasciilib.diptrace.tree.DiptraceItem.printTree(String)<br/>Called method java.io.PrintStream.format(String, Object[])<br/>Format string "%s%s\n"<br/>At DiptraceItem.java:[line 147]</p>
-</td>
-</tr>
-</table>
-<h2>
-<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
-</h2>
-<table class="warningtable" width="100%" cellspacing="0">
-<tr class="tableheader">
-<th align="left">Code</th>
-<th align="left">Warning</th>
-</tr>
-<tr class="tablerow1" onclick="toggleRow('N65609');">
-<td>
-<span class="priority-2">NP</span>
-</td>
-<td>Possible null pointer dereference of token in javadiptraceasciilib.diptrace.tree.DiptraceGenericItem.parse(DiptraceTokenizer)</td>
-</tr>
-<tr class="detailrow1">
-<td/>
-<td>
-<p id="N65609" style="display: none;">
-<a href="#NP_NULL_ON_SOME_PATH">Bug type NP_NULL_ON_SOME_PATH (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.tree.DiptraceGenericItem<br/>In method javadiptraceasciilib.diptrace.tree.DiptraceGenericItem.parse(DiptraceTokenizer)<br/>Value loaded from token<br/>Dereferenced at DiptraceGenericItem.java:[line 55]<br/>Known null at DiptraceGenericItem.java:[line 47]</p>
-</td>
-</tr>
-<tr class="tablerow0" onclick="toggleRow('N65686');">
-<td>
-<span class="priority-2">RV</span>
-</td>
-<td>Return value of String.hashCode() ignored in javadiptraceasciilib.diptrace.tree.DiptraceItem.getItemByIdentifier(DiptraceToken)</td>
-</tr>
-<tr class="detailrow0">
-<td/>
-<td>
-<p id="N65686" style="display: none;">
-<a href="#RV_RETURN_VALUE_IGNORED">Bug type RV_RETURN_VALUE_IGNORED (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.tree.DiptraceItem<br/>In method javadiptraceasciilib.diptrace.tree.DiptraceItem.getItemByIdentifier(DiptraceToken)<br/>Called method String.hashCode()<br/>At DiptraceItem.java:[line 105]</p>
-</td>
-</tr>
-</table>
-<h2>
-<a name="Warnings_STYLE">Dodgy code Warnings</a>
-</h2>
-<table class="warningtable" width="100%" cellspacing="0">
-<tr class="tableheader">
-<th align="left">Code</th>
-<th align="left">Warning</th>
-</tr>
-<tr class="tablerow1" onclick="toggleRow('N65552');">
-<td>
-<span class="priority-2">NP</span>
-</td>
-<td>Immediate dereference of the result of readLine() in new javadiptraceasciilib.diptrace.tokenizer.DiptraceTokenizer(BufferedReader)</td>
-</tr>
-<tr class="detailrow1">
-<td/>
-<td>
-<p id="N65552" style="display: none;">
-<a href="#NP_IMMEDIATE_DEREFERENCE_OF_READLINE">Bug type NP_IMMEDIATE_DEREFERENCE_OF_READLINE (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.tokenizer.DiptraceTokenizer<br/>In method new javadiptraceasciilib.diptrace.tokenizer.DiptraceTokenizer(BufferedReader)<br/>At DiptraceTokenizer.java:[line 46]</p>
-</td>
-</tr>
-</table>
 <h1>
 <a name="Details">Details</a>
 </h1>
-<h2>
-<a name="VA_FORMAT_STRING_USES_NEWLINE">VA_FORMAT_STRING_USES_NEWLINE: Format string should use %n rather than \n</a>
-</h2>
-
-<p>
-This format string include a newline character (\n). In format strings, it is generally
- preferable better to use %n, which will produce the platform-specific line separator.
-</p>
-
-     
-<h2>
-<a name="NP_IMMEDIATE_DEREFERENCE_OF_READLINE">NP_IMMEDIATE_DEREFERENCE_OF_READLINE: Immediate dereference of the result of readLine()</a>
-</h2>
-
-  <p> The result of invoking readLine() is immediately dereferenced. If there are no more lines of text
-to read, readLine() will return null and dereferencing that will generate a null pointer exception.
-</p>
-
-    
-<h2>
-<a name="NP_NULL_ON_SOME_PATH">NP_NULL_ON_SOME_PATH: Possible null pointer dereference</a>
-</h2>
-
-<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
-a null value will be dereferenced, which
-would generate a <code>NullPointerException</code> when the code is executed.
-Of course, the problem might be that the branch or statement is infeasible and that
-the null pointer exception can't ever be executed; deciding that is beyond the ability of FindBugs.
-</p>
-
-    
-<h2>
-<a name="RV_RETURN_VALUE_IGNORED">RV_RETURN_VALUE_IGNORED: Method ignores return value</a>
-</h2>
-
-   <p> The return value of this method should be checked. One common
-cause of this warning is to invoke a method on an immutable object,
-thinking that it updates the object. For example, in the following code
-fragment,</p>
-<blockquote>
-<pre>
-String dateString = getHeaderField(name);
-dateString.trim();
-</pre>
-</blockquote>
-<p>the programmer seems to be thinking that the trim() method will update
-the String referenced by dateString. But since Strings are immutable, the trim()
-function returns a new String value, which is being ignored here. The code
-should be corrected to: </p>
-<blockquote>
-<pre>
-String dateString = getHeaderField(name);
-dateString = dateString.trim();
-</pre>
-</blockquote>
-
-    </body>
+</body>
 </html>
