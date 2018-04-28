@@ -2,6 +2,26 @@
 <checkstyle version="8.5">
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/Example.java">
 </file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/DiptraceProject.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/package-info.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tokenizer/DiptraceToken.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tokenizer/DiptraceTokenType.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tokenizer/DiptraceTokenizer.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tokenizer/package-info.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tree/DiptraceGenericItem.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tree/DiptraceItem.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tree/DiptraceRootItem.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/tree/package-info.java">
+</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/package-info.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/util/CheckStyleAnalyzer.java">
