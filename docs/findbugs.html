@@ -79,7 +79,7 @@
 <br/>
 </p>
 <h2>Metrics</h2>
-<p>8557 lines of code analyzed,
+<p>8588 lines of code analyzed,
 	in 419 classes, 
 	in 45 packages.</p>
 <table width="500" cellpadding="5" cellspacing="2">
@@ -95,18 +95,18 @@
 </tr>
 <tr class="tablerow1">
 <td>Medium Priority Warnings</td>
-<td align="right">3</td>
-<td align="right">0.35</td>
+<td align="right"/>
+<td align="right">0.00</td>
 </tr>
 <tr class="$totalClass">
 <td>
 <b>Total Warnings</b>
 </td>
 <td align="right">
-<b>3</b>
+<b>0</b>
 </td>
 <td align="right">
-<b>0.35</b>
+<b>0.00</b>
 </td>
 </tr>
 </table>
@@ -120,9 +120,6 @@
 <h2>Contents</h2>
 <ul>
 <li>
-<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
-</li>
-<li>
 <a href="#Details">Details</a>
 </li>
 </ul>
@@ -134,92 +131,17 @@
 </tr>
 <tr class="tablerow0">
 <td>
-<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
-</td>
-<td align="right">3</td>
-</tr>
-<tr class="tablerow1">
-<td>
 <b>Total</b>
 </td>
 <td align="right">
-<b>3</b>
+<b>0</b>
 </td>
 </tr>
 </table>
 <h1>Warnings</h1>
 <p>Click on a warning row to see full context information.</p>
-<h2>
-<a name="Warnings_PERFORMANCE">Performance Warnings</a>
-</h2>
-<table class="warningtable" width="100%" cellspacing="0">
-<tr class="tableheader">
-<th align="left">Code</th>
-<th align="left">Warning</th>
-</tr>
-<tr class="tablerow1" onclick="toggleRow('N65552');">
-<td>
-<span class="priority-2">SIC</span>
-</td>
-<td>Should javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags be a _static_ inner class?</td>
-</tr>
-<tr class="detailrow1">
-<td/>
-<td>
-<p id="N65552" style="display: none;">
-<a href="#SIC_INNER_SHOULD_BE_STATIC">Bug type SIC_INNER_SHOULD_BE_STATIC (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags<br/>At DiptraceProject.java:[line 144]</p>
-</td>
-</tr>
-<tr class="tablerow0" onclick="toggleRow('N65589');">
-<td>
-<span class="priority-2">UrF</span>
-</td>
-<td>Unread field: javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags.fPCB</td>
-</tr>
-<tr class="detailrow0">
-<td/>
-<td>
-<p id="N65589" style="display: none;">
-<a href="#URF_UNREAD_FIELD">Bug type URF_UNREAD_FIELD (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags<br/>Field javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags.fPCB<br/>At DiptraceProject.java:[line 144]</p>
-</td>
-</tr>
-<tr class="tablerow1" onclick="toggleRow('N65643');">
-<td>
-<span class="priority-2">UrF</span>
-</td>
-<td>Unread field: javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags.fSchematics</td>
-</tr>
-<tr class="detailrow1">
-<td/>
-<td>
-<p id="N65643" style="display: none;">
-<a href="#URF_UNREAD_FIELD">Bug type URF_UNREAD_FIELD (click for details)</a>
-<br/>In class javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags<br/>Field javadiptraceasciilib.diptrace.DiptraceProject$SchematicsPCBFlags.fSchematics<br/>At DiptraceProject.java:[line 144]</p>
-</td>
-</tr>
-</table>
 <h1>
 <a name="Details">Details</a>
 </h1>
-<h2>
-<a name="SIC_INNER_SHOULD_BE_STATIC">SIC_INNER_SHOULD_BE_STATIC: Should be a static inner class</a>
-</h2>
-
-  <p> This class is an inner class, but does not use its embedded reference
-  to the object which created it.&nbsp; This reference makes the instances
-  of the class larger, and may keep the reference to the creator object
-  alive longer than necessary.&nbsp; If possible, the class should be
-   made static.
-</p>
-
-    
-<h2>
-<a name="URF_UNREAD_FIELD">URF_UNREAD_FIELD: Unread field</a>
-</h2>
-
-  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
-
-    </body>
+</body>
 </html>
