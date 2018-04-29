@@ -1,5 +1,6 @@
 javadiptraceasciilib
 javadiptraceasciilib.diptrace
+javadiptraceasciilib.diptrace.operations
 javadiptraceasciilib.diptrace.tokenizer
 javadiptraceasciilib.diptrace.tree
 util
