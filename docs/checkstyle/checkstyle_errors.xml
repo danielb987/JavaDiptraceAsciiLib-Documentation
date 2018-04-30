@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.5">
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/FlashLight.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/package-info.java">
+</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/Example.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/DiptraceProject.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/exceptions/IllegalTokenValue.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/exceptions/NotFoundException.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/exceptions/package-info.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/diptrace/operations/DiptraceOperations.java">
 </file>

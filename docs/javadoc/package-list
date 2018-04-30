@@ -1,5 +1,7 @@
+examples.javadiptraceasciilib
 javadiptraceasciilib
 javadiptraceasciilib.diptrace
+javadiptraceasciilib.diptrace.exceptions
 javadiptraceasciilib.diptrace.operations
 javadiptraceasciilib.diptrace.tokenizer
 javadiptraceasciilib.diptrace.tree
