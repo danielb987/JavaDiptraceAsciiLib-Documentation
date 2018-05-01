@@ -2,6 +2,8 @@
 <checkstyle version="8.5">
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/FlashLight.java">
 </file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/FlashLightExtended.java">
+</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/package-info.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/Example.java">
