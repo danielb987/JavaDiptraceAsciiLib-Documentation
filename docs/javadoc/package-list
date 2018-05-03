@@ -1,8 +1,10 @@
 examples.javadiptraceasciilib
 javadiptraceasciilib
-javadiptraceasciilib.diptrace
-javadiptraceasciilib.diptrace.exceptions
-javadiptraceasciilib.diptrace.operations
-javadiptraceasciilib.diptrace.tokenizer
-javadiptraceasciilib.diptrace.tree
+javadiptraceasciilib.old
+javadiptraceasciilib.old.diptrace
+javadiptraceasciilib.old.diptrace.exceptions
+javadiptraceasciilib.old.diptrace.graphics
+javadiptraceasciilib.old.diptrace.operations
+javadiptraceasciilib.old.diptrace.tokenizer
+javadiptraceasciilib.old.diptrace.tree
 util
