@@ -2,15 +2,23 @@
 <checkstyle version="8.5">
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/FlashLight.java">
 </file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/FlashLightExtended.java">
-</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/examples/javadiptraceasciilib/package-info.java">
 </file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceAttribute.java">
+</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceComponent.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceConnection.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceDoubleAttribute.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceDoublePercentAttribute.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceGenericItem.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceGraphics.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceIntegerAttribute.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceItem.java">
 </file>
@@ -22,7 +30,7 @@
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceRootItem.java">
 </file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceSchematicsAndPCBItem.java">
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceStringAttribute.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceToken.java">
 </file>
@@ -33,48 +41,6 @@
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/IllegalTokenValue.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/NotFoundException.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/Example.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/DiptraceProject.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/exceptions/IllegalTokenValue.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/exceptions/NotFoundException.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/exceptions/package-info.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/graphics/DiptraceGraphics.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/graphics/package-info.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/operations/DiptraceOperations.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/operations/DiptraceSchematicsAndPCBItem.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/operations/DiptraceSchematicsAndPCBOperations.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/operations/package-info.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/package-info.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tokenizer/DiptraceToken.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tokenizer/DiptraceTokenType.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tokenizer/DiptraceTokenizer.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tokenizer/package-info.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tree/DiptraceGenericItem.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tree/DiptraceItem.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tree/DiptraceRootItem.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/diptrace/tree/package-info.java">
-</file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/old/package-info.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/package-info.java">
 </file>
