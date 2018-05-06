@@ -8,8 +8,6 @@
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceComponent.java">
 </file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceConnection.java">
-</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceDoubleAttribute.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceDoublePercentAttribute.java">
@@ -21,6 +19,8 @@
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceIntegerAttribute.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceItem.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceNet.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceOperations.java">
 </file>
