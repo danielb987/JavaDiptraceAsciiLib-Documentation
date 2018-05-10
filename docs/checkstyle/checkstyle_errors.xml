@@ -18,8 +18,6 @@
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceGraphics.java">
 </file>
-<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceIntegerAttribute.java">
-</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceItem.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceNet.java">
@@ -34,6 +32,8 @@
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceRootItem.java">
 </file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceShapeItem.java">
+</file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceStringAttribute.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceToken.java">
@@ -41,6 +41,8 @@
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceTokenType.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceTokenizer.java">
+</file>
+<file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/DiptraceTreeNode.java">
 </file>
 <file name="/home/travis/build/danielb987/JavaDiptraceAsciiLib/src/javadiptraceasciilib/NotFoundException.java">
 </file>
